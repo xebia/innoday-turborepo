@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "license": "UNLICENSED",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsnd ./src/index.ts",
+    "build": "rimraf dist && tsc",
+    "serve": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "4.18.1",
+    "types": "*"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.12",
+    "ts-node-dev": "1.1.8",
+    "typescript": "^4.5.3",
+    "tsconfig": "*",
+    "rimraf": "^3.0.2"
+  }
+}
