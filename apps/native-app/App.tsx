@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import type { Person } from "types";
+import { Button } from "ui";
 
 export default function App() {
   const [person, setPerson] = useState<Person | null>(null);
@@ -15,6 +16,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       {person && <Text>Hi, {person.firstName}!</Text>}
+      <Button />
       <Text>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>

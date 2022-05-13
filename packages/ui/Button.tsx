@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Button as NativeButton } from "react-native";
+
 export const Button = () => {
-  return <button>Boop</button>;
+  return <NativeButton title="Boop" />;
 };
