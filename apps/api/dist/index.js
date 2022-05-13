@@ -6,7 +6,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const PORT = 3002;
 const app = (0, express_1.default)();
-app.use((req, res) => {
-    res.json({ message: "Hello World" });
+const person = {
+    email: "everweij@xebia.com",
+    firstName: "Erik",
+    lastName: "Verweij",
+};
+app.get("/", (req, res) => {
+    res.json(person);
 });
 app.listen(PORT, () => console.log(`API listening on port ${PORT}!`));
